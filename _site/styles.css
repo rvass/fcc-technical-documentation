@@ -1,0 +1,92 @@
+html {
+  font-family: arial;
+}
+body {
+  margin: 0;
+  
+}
+
+/* NAV STYLES */
+#navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  overflow: scroll;
+  border-right: 2px solid black;
+}
+#navbar header {
+  margin-left: 0px;
+  padding-left: 30px;
+  position: fixed;
+  width: 350px;
+  background: white;
+  display: block;
+}
+#navbar ul {
+  
+  margin-left: 0;
+  padding-left: 0px;
+  padding-top: 60px;
+}
+#navbar li {
+  margin: 0;
+  list-style: none;
+  border-top: thin solid black;
+  padding: 10px 30px 10px;
+/*   border-bottom: thin solid black; */
+/*   padding: 0; */
+}
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN STYLES */
+main {
+  position: relative;
+  margin-left: 350px;
+  padding: 0 50px;
+  
+  margin-bottom: 100px;
+}
+
+header {
+  padding: 20px 0;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+p, ul {
+  margin-left: 15px;
+  line-height: 1.5;
+}
+li {
+  margin: 15px 0;
+}
+
+code {
+  background-color: #ddd;
+  display: block;
+  padding: 010px;
+  margin-left: 25px;
+/*   white-space: pre; */
+  line-height: 2;
+}
+
+@media (max-width: 1150px) {
+  #navbar {
+/*     width: 100%; */
+    position: static;
+    border: none;
+    width: 100%;
+  }
+  header {
+    min-width: 100%;
+  }
+  main {
+    position: static;
+    margin-left: 0px
+  }
+}
